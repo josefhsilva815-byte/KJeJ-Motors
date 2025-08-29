@@ -12,12 +12,23 @@ body {
 
 header {
     background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    gap: 50px;
+    height: 100px;
+    width: 100%;
+    font-size: 22px;
+}
+header div {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 16px;
-    gap: 12px;
+    justify-content: center;
+    margin: auto;
+    gap: 50px;
 }
 header img {
     width: 2px;
@@ -44,23 +55,101 @@ section {
     align-items: center;
     min-height: 93vh;
     padding: 24px;
+    height: 100%;
 }
 
-section h2 {
-    margin: 16px 0;
+.home {
+    width: 1024px;
+    height: auto;
+    justify-self: center;
+}
+.home h1 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
+.veiculos {
+    width: 1024px;
+    height: auto;
+    justify-self: center;
+}
+.veiculos h2 {
+    margin-top: 20px;
+}
+.veiculos h3 {
+    margin-top: auto;
+}
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 24px;
     width: 100%;
-    max-width: 1024px;
     padding: 16px;
 }
-.container img {
-    width: 50%;
+.img-loja{
+    width: 720px;
+    height: auto;
+    border-radius: 15px;
+}
+.bem-vindo {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
     height: 100%;
+    padding: 50px 100px;
+    font-size: 24px;
+}
+.bem-vindo h2 {
+    margin: 16px 0;
+}
+
+.img-equipe {
+    width: 720px;
+    height: auto;
+    border-radius: 15px;
+}
+.compromisso {
+    width: 100%;
+    height: 100%;
+    padding: 70px 0;
+    font-size: 24px;
+}
+.compromisso h2 {
+    margin: 16px 0;
+}
+.compromisso p {
+    margin-bottom: 8px;
+}
+.compromisso li {
+    line-height: 30px;
+    list-style: none;
+    
+}
+
+.MVV {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    place-items: center;
+    margin: 50px 30px 30px;
+    gap: 100px;
+    justify-content: center;
+}
+
+.MVV div {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    text-align: start;
+    justify-content: start;
+    gap: 10px;
+    font-size: 24px;
+}
+.MVV li {
+    list-style: none;
+    text-align: start;
 }
 
 .card {
@@ -102,6 +191,12 @@ footer {
     justify-content: center;
     align-items: center;
 }
+.form-container h1 {
+    font-size: 30px;
+    text-align: start;
+    margin-bottom: 30px;
+    width: 60%;
+}
 
 #cadastroForm {
     display: flex;
@@ -119,6 +214,7 @@ footer {
     border: none;
     border-bottom: 2px solid #ffffff;
     transition: ease-in 0.2s;
+    color: #ffffff;
 }
 
 #cadastroForm div input:focus,
@@ -136,11 +232,17 @@ footer {
     border-bottom: 2px solid #ffffff;
     padding: 4px 12px;
     transition: ease-in 0.2s;
+    align-self: center;
 }
 
 .btnsbt:hover {
     color: #3370ff;
     border-color: #3370ff;
+}
+
+.agradecimentos {
+    text-align: center;
+    font-size: 50px;
 }
 
 @media (max-width: 768px) {
